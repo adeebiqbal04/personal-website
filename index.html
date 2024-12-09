@@ -3,55 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adeeb's Website</title>
+    <title>Adeeb's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
-    <header class="styled-header">
-        <img src="images/chill guy.webp" alt="Logo" class="logo">
-        <div class="header-text">
-            <h1>Welcome!</h1>
-           
-        </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    
 
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <!-- <img src="images/chill guy.webp" alt="Profile Picture" class="hero-image"> -->
+            <div class="hero-text">
+                
+                <h2> Hello, I'm a <span>Software Engineering Student</span></h2>
+                <p>
+                    Passionate about building innovative projects and creating impactful solutions.
+                    Explore my portfolio to see my work and learn more about me.
+                </p>
+            </div>
+        </div>
+    </section>
 
-
-
-    <!--Include the navbar that includes about,projects & contact -->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Divider -->
+    <hr>
 
     <!-- About Me Section -->
-     <section id = "about">
-        <h2> About Me</h2>
-        <p> Hi! I'm Adeeb, a software engineering student</p>
-     </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+         I'm Adeeb, a software engineering student exploring the world of technology. 
+           
+        </p>
+    </section>
 
-      <!-- Project Section -->
-      <section id = "projects">
-        <h2> Projects</h2>
-        <p> Here are some of my projects!</p>
-     </section>
+    <!-- Divider -->
+    <hr>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <!--Include the links for each project to its github repo-->
+            <!-- Include underline to show the href-->
+           <li><strong>Healthcare App:</strong> <a href="" target="_blank"> A web app for tracking patients' medical history, and real-time waiting lists.</a></li>
+            <li><strong>Productivity App:</strong> <a href="" target="_blank"> Pomodoro-based app with progress tracking to improve focus and efficiency.</a></li>
+            <li><strong></strong> <a href="" target="_blank"> </a></li>
+            <li><strong></strong> <a href="" target="_blank"> </a></li>
+        </ul>
+    </section>
+
+    <!-- Divider -->
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via the links below:</p>
+        <div class="social-links">
+            <a href="https://github.com/adeebiqbal04" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/adeebiqbal" target="_blank">LinkedIn</a> |
+            <a href="" target="_blank">Email</a> 
+        </div>
+    </section>
+   
+        
 
 
 
+    
 
-
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Adeeb Iqbal</p>
+        <p>© 2024 Adeeb Iqbal </p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

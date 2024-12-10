@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adeeb's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Adeeb's Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <!-- Header -->
-    <header>
+     <header> 
+        <!-- shorcut
+        nav>ul>li*4  
+        or 
+        nav>ul>li*4>a[href="#"]
+        -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -18,15 +24,13 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header> 
 
     <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-content">
-            <!-- <img src="images/chill guy.webp" alt="Profile Picture" class="hero-image"> -->
+     <section id="home">  <!--  section#home  shorcut-->
+        <div class="hero-content"> <!-- div.hero-content  shorcut-->
             <div class="hero-text">
-                
-                <h2> Hello, I'm a <span>Software Engineering Student</span></h2>
+                <h2> Hello, <span> I'm a Software Engineering Student</span></h2>
                 <p>
                     Passionate about building innovative projects and creating impactful solutions.
                     Explore my portfolio to see my work and learn more about me.
@@ -39,28 +43,44 @@
     <hr>
 
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about"> 
         <h2>About Me</h2>
         <p>
          I'm Adeeb, a software engineering student exploring the world of technology. 
-           
         </p>
     </section>
+   
 
     <!-- Divider -->
     <hr>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <!--Include the links for each project to its github repo-->
-            <!-- Include underline to show the href-->
-           <li><strong>Healthcare App:</strong> <a href="" target="_blank"> A web app for tracking patients' medical history, and real-time waiting lists.</a></li>
-            <li><strong>Productivity App:</strong> <a href="" target="_blank"> Pomodoro-based app with progress tracking to improve focus and efficiency.</a></li>
-            <li><strong></strong> <a href="" target="_blank"> </a></li>
-            <li><strong></strong> <a href="" target="_blank"> </a></li>
-        </ul>
+    <h2>Projects</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Project Name </th>
+                <th>Description</th>
+                <th>Technologies used</th>
+                <th>Link</th>  <!-- Include the links for each project to its github repo--> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Healthcare App</td>
+                <td>A web app for tracking patients' medical history, and real-time waiting lists.</td>
+                <td></td>
+                <td><a href="" target="_blank">GitHub Repo</a></td> <!--Include the link-->
+            </tr>
+            <tr>
+                <td>Productivity App</td>
+                <td>Pomodoro-based app with progress tracking to improve focus and efficiency.</td>
+                <td></td>
+                <td><a href="" target="_blank">GitHub Repo</a></td> <!--Include the link-->
+            </tr>
+        </tbody>
+    </table>
     </section>
 
     <!-- Divider -->
@@ -73,19 +93,14 @@
         <div class="social-links">
             <a href="https://github.com/adeebiqbal04" target="_blank">GitHub</a> |
             <a href="https://linkedin.com/in/adeebiqbal" target="_blank">LinkedIn</a> |
-            <a href="" target="_blank">Email</a> 
+            <a href="mailto:@gmail.com" target="_blank">Email</a> 
         </div>
     </section>
-   
-        
-
-
-
-    
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 Adeeb Iqbal </p>
+        <p>© 2024 Adeeb Iqbal. Al rights reserved.  </p>
     </footer>
+
 </body>
 </html>

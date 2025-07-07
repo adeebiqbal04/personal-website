@@ -1,0 +1,512 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #909db1;
+    color: #222831;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none; /* Removes bullet points */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherits text color */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-padding-top: 80px; /* Matches your header height */
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent; /* No background */
+    position: fixed; /* Always at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: none;
+    height: 60px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb; /* Blue highlight color */
+}
+
+nav ul {
+    display: flex ; /* Aligns links horizontally */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Black by default */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2563eb; /* Blue on hover */
+}
+
+/* Hero Section */
+.hero-content {
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #2563eb; /* Blue border around profile */
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.hero-text h1 span {
+    color: #2563eb; /* Blue highlight color for name */
+}
+
+.hero-text h2 {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+    color: #ffffff;
+}
+
+.hero-text h2 span {
+    color:black; /* Highlight color for title */
+}
+
+.hero-text p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    color: #2563eb;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+    color: #3b82f6;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Section Styles */
+section {
+    min-height: 300px; /* Match the height of your projects section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem; /* Less padding */
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: black; /* Highlight color for section headings */
+}
+
+p, ul li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+ul li strong {
+    color: #2563eb; /* Blue highlight color for project titles */
+}
+
+/* Divider (HR) Styles */
+hr {
+    border: none;
+    height: 1px;
+    background: black; /* White divider */
+    margin: 3rem 0; /* Space above and below divider */
+    opacity: 0.8; /* Slight transparency */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #111;
+    color: #ffffff;
+}
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:#909db1;
+     /* #6b7078 ; Simple, clean light grey background */
+/* #cec2c2 */
+    color: #222831;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none; /* Removes bullet points */
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherits text color */
+    
+}
+
+/* Smooth scrolling */
+html {
+    scroll-padding-top: 80px; /* Matches your header height */
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center; /* Centers the navigation bar horizontally */
+    align-items: center; /* Aligns items vertically */
+    padding: 1rem 2rem;
+    /* background-color: #111; Slightly lighter black for header */
+    position: fixed; /* Sticks header to top */
+    width: 100%;
+    z-index: 1000;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); Subtle shadow */
+    
+}
+
+
+nav ul {
+    display: flex; /* Aligns links horizontally */
+    gap: 2rem; /* Adds spacing between the links */
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Black by default */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2563eb; /* Blue on hover */
+}
+
+/* Hero Section */
+#home {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Ensures text is centered */
+    height: 100vh; /* Full viewport height */
+    padding: 2rem;
+    /* background-image: url(images/chill\ guy.webp); */
+    background-size: 2000px;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #0d0628; /* Highlight color for text */
+    
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* About Section */
+#about {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2563eb; /* Blue highlight color for section heading */
+}
+
+#about p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Contact Section */
+#contact {
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text alignment */
+    padding: 6rem 2rem 6rem 2rem; /* More vertical padding */
+    min-height: 400px; /* Make contact section taller */
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2563eb; /* Blue highlight color for heading */
+}
+
+#contact p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+#contact .social-links {
+    display: flex; /* Aligns links horizontally */
+    gap: 1.5rem; /* Adds spacing between links */
+}
+
+#contact .social-links a {
+    color: #2563eb; /* Blue highlight color for social links */
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease;
+}
+
+#contact .social-links a:hover {
+    color: #3b82f6; /* Blue color on hover */
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #111; /* Same as header */
+    color: #ffffff;
+    
+}
+
+/* Projects Table Styles */
+#projects table {
+    width: 100%; /* Full width of the section */
+    border-collapse: collapse; /* Removes space between table borders */
+    margin: 2rem 0; /* Spacing around the table */
+}
+
+#projects th, #projects td {
+    border: 1px solid #ffffff; /* White border for table */
+    padding: 1rem; /* Adds padding inside cells */
+    text-align: left; /* Aligns text to the left */
+    color: #ffffff; /* White text */
+}
+
+#projects th {
+    background-color: black; /* Red background for header row */
+    color: #000000; /* Black text for headers */
+    font-size: 1.2rem;
+}
+
+#projects tr:nth-child(even) {
+    background-color: #111; /* Slightly darker background for even rows */
+}
+
+#projects tr:hover {
+    background-color: #333; /* Highlight row on hover */
+}
+
+#projects a {
+    color: #2563eb; /* Blue highlight color for links */
+    text-decoration: underline; /* Underline for links */
+    transition: color 0.3s ease;
+}
+
+#projects a:hover {
+    color: #3b82f6; /* Blue color on hover */
+}
+
+/* Projects Grid Styles */
+.projects-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #909db1 ;
+    border-radius: 24px;
+    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 1.2rem;
+}
+
+.project-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #222831;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border: 1.5px solid #222831;
+    border-radius: 999px;
+    background: none;
+    color: #222831;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 0.5rem;
+}
+
+.github-btn:hover {
+    background: #222831;
+    color: #fff;
+}
+
+.hero-text h1,
+.hero-text h2,
+.hero-text p {
+    color: #222831; /* Dark text for better contrast */
+}
+
+#about h2,
+#about p {
+    color: #222831; /* Dark text for about section */
+}
+
+#contact h2,
+#contact p {
+    color: #222831; /* Dark text for contact section */
+}
+
+#home, main, .hero-content, #projects, #about, #contact {
+    margin-top: 5px; /* Adjust if your header height changes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .project-card {
+        width: 90vw;
+        max-width: 400px;
+    }
+    header {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 0.5rem;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+    .hero-content,
+    section {
+        padding: 1.5rem 0.5rem;
+    }
+    h1, .hero-text h1 {
+        font-size: 2rem;
+    }
+    h2, .hero-text h2 {
+        font-size: 1.3rem;
+    }
+    .project-card {
+        width: 98vw;
+        max-width: 98vw;
+        padding: 1rem 0.5rem;
+    }
+    #about, #contact {
+        padding: 2rem 0.5rem;
+    }
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Ensure horizontal scroll never appears */
+body {
+    overflow-x: hidden;
+}

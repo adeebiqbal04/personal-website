@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adeeb's Website</title>
+    <title>Adeeb's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <!-- Header -->
-     <header> 
-        <!-- shorcut
-        nav>ul>li*4  
-        or 
-        nav>ul>li*4>a[href="#"]
-        -->
+    <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -24,17 +18,22 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header> 
+    </header>
 
     <!-- Hero Section -->
-     <section id="home">  <!--  section#home  shorcut-->
-        <div class="hero-content"> <!-- div.hero-content  shorcut-->
+    <section id="home">
+        <div class="hero-content">
+            <!-- <img src="images/chill guy.webp" alt="Profile Picture" class="hero-image"> -->
             <div class="hero-text">
-                <h2> Hello, <span> I'm a Software Engineering Student</span></h2>
+                <h1>Hello, I'm <span>Adeeb</span></h1>
+                <h3>Software Engineering Student</h3>
                 <p>
-                    Passionate about building innovative projects and creating impactful solutions.
-                    Explore my portfolio to see my work and learn more about me.
+                    I love building projects and learning new things. Check out my work below!
                 </p>
+                <div class="social-links">
+                    <a href="https://github.com/adeebiqbal04" target="_blank">GitHub</a> |
+                    <a href="https://linkedin.com/in/adeebiqbal" target="_blank">LinkedIn</a>
+                </div>
             </div>
         </div>
     </section>
@@ -43,44 +42,43 @@
     <hr>
 
     <!-- About Me Section -->
-    <section id="about"> 
+    <section id="about">
         <h2>About Me</h2>
-        <p>
-         I'm Adeeb, a software engineering student exploring the world of technology. 
+        <p> 
+           I am
         </p>
     </section>
-   
 
     <!-- Divider -->
     <hr>
 
     <!-- Projects Section -->
     <section id="projects">
-    <h2>Projects</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Project Name </th>
-                <th>Description</th>
-                <th>Technologies used</th>
-                <th>Link</th>  <!-- Include the links for each project to its github repo--> 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Healthcare App</td>
-                <td>A web app for tracking patients' medical history, and real-time waiting lists.</td>
-                <td></td>
-                <td><a href="" target="_blank">GitHub Repo</a></td> <!--Include the link-->
-            </tr>
-            <tr>
-                <td>Productivity App</td>
-                <td>Pomodoro-based app with progress tracking to improve focus and efficiency.</td>
-                <td></td>
-                <td><a href="" target="_blank">GitHub Repo</a></td> <!--Include the link-->
-            </tr>
-        </tbody>
-    </table>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+             <div class="project-title">Cafe POI App</div>
+             <img src="images/cafepoi.jpg" alt="Project One Screenshot" class="project-img">
+            <div class="project-desc">
+                This app helps users find nearby cafes and places of interest.
+            </div>
+            <a href="https://github.com/yourusername/project1" target="_blank" class="github-btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                 <div class="project-title">Real Estate App</div>
+                <img src="images/realestate.jpg" alt="Project Two Screenshot" class="project-img">
+                <div class="project-desc">
+                    This app allows users to browse and find real estate listings.
+                </div>
+                <a href="https://github.com/yourusername/project2" target="_blank" class="github-btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <div class="project-title">App </div>
+                <img src="images/chill guy.webp" alt="Project Three Screenshot" class="project-img">
+                <div class="project-desc">Order food easily and get discounts</div>
+                <a href="https://github.com/yourusername/project3" target="_blank" class="github-btn">GitHub</a>
+            </div>
+        </div>
     </section>
 
     <!-- Divider -->
@@ -90,17 +88,27 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Feel free to reach out via the links below:</p>
-        <div class="social-links">
-            <a href="https://github.com/adeebiqbal04" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com/in/adeebiqbal" target="_blank">LinkedIn</a> |
-            <a href="mailto:@gmail.com" target="_blank">Email</a> 
+        <!-- <ul>
+            <li><strong>Email:</strong> @gmail.com</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/adeebiqbal04" target="_blank">adeebiqbal04</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/adeebiqbal" target="_blank">Adeeb Iqbal</a></li>
+        </ul> -->
+         <div class="social-links">
+            <a href="https://github.com/adeebiqbal04" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo" class="social-icon">
+                GitHub
+            </a>
+            |
+            <a href="https://linkedin.com/in/adeebiqbal" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Logo" class="social-icon">
+                LinkedIn
+            </a>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Adeeb Iqbal. Al rights reserved.  </p>
-    </footer>
-
+   
 </body>
+<footer>
+    <p> © 2025 Adeeb Iqbal. All rights reserved.</p>
+</footer>
 </html>

@@ -32,22 +32,24 @@ html {
 /* Header Styles */
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background: transparent; /* No background */
-    position: fixed; /* Always at the top */
+    padding: 15px 30px;
+    /* background: #3b82f6; Blue theme */
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: none;
+    /* border: 2px solid #2563eb; */
     height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #2563eb; /* Blue highlight color */
+color: #ffffff; /* White for contrast */
 }
 
 nav ul {
@@ -61,7 +63,7 @@ nav ul li {
 nav ul li a {
     font-size: 1rem;
     font-weight: bold;
-    color: #000; /* Black by default */
+    color: #ffffff; /* White for contrast */
     transition: color 0.3s ease;
 }
 
@@ -172,7 +174,7 @@ hr {
 footer {
     text-align: center;
     padding: 2rem 0;
-    background-color: #111;
+    background-color: #909db1;
     color: #ffffff;
 }
 /* General Reset */
@@ -248,8 +250,8 @@ nav ul li a:hover {
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     text-align: center; /* Ensures text is centered */
-    height: 100vh; /* Full viewport height */
-    padding: 2rem;
+    height: 50vh; /* Adjust this value to make it smaller */
+    padding: 2rem 1rem; /* Reduce padding */
     /* background-image: url(images/chill\ guy.webp); */
     background-size: 2000px;
 }
@@ -268,7 +270,10 @@ nav ul li a:hover {
 
 /* About Section */
 #about {
-    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    padding: 1rem; /* Adjust padding as needed */
     text-align: center;
 }
 
@@ -285,13 +290,13 @@ nav ul li a:hover {
 
 /* Contact Section */
 #contact {
-    display: flex; /* Enables Flexbox */
+    display: flex;
     flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers items vertically */
+    justify-content: center; /* Centers content vertically */
     align-items: center; /* Centers items horizontally */
     text-align: center; /* Centers text alignment */
-    padding: 6rem 2rem 6rem 2rem; /* More vertical padding */
-    min-height: 400px; /* Make contact section taller */
+    height: 30vh; /* Set to a smaller value */
+    padding: 1rem; /* Reduce padding */
 }
 
 #contact h2 {
@@ -328,12 +333,19 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 2rem 0;
-    background-color: #111; /* Same as header */
+    background-color: #2563eb; /* Blue same as sections */
     color: #ffffff;
     
 }
 
 /* Projects Table Styles */
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    padding: 1rem; /* Adjust padding as needed */
+}
+
 #projects table {
     width: 100%; /* Full width of the section */
     border-collapse: collapse; /* Removes space between table borders */
@@ -454,7 +466,7 @@ footer {
 }
 
 #home, main, .hero-content, #projects, #about, #contact {
-    margin-top: 5px; /* Adjust if your header height changes */
+    margin-top: 60px; /* Adjust to navbar height */
 }
 
 /* Responsive adjustments */

@@ -1,1 +1,18 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore local build files (if any)
+dist/
+build/
+
+# Ignore environment variables (if you ever use them)
+.env
+.env.local
+
+# Ignore VS Code settings
+.vscode/
+
+# Node-related (just in case you add tooling later)
+node_modules/
 

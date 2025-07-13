@@ -1,524 +1,259 @@
-/* General Reset */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #909db1;
-    color: #222831;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none; /* Removes bullet points */
+  font-family: 'Poppins', sans-serif;
+  background: #909db1;
+  color: #222831;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: inherit; /* Inherits text color */
-}
-
-/* Smooth scrolling */
-html {
-    scroll-padding-top: 80px; /* Matches your header height */
-    scroll-behavior: smooth;
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    /* background: #3b82f6; Blue theme */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    /* border: 2px solid #2563eb; */
-    height: 60px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-color: #ffffff; /* White for contrast */
-}
-
-nav ul {
-    display: flex ; /* Aligns links horizontally */
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ffffff; /* White for contrast */
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #2563eb; /* Blue on hover */
-}
-
-/* Hero Section */
-.hero-content {
-    text-align: center;
-    padding: 6rem 2rem;
-}
-
-.hero-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 4px solid #2563eb; /* Blue border around profile */
-    margin: 0 auto 1.5rem;
-    display: block;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    color: #ffffff;
-}
-
-.hero-text h1 span {
-    color: #2563eb; /* Blue highlight color for name */
-}
-
-.hero-text h2 {
-    font-size: 1.8rem;
-    margin-top: 0.5rem;
-    color: #ffffff;
-}
-
-.hero-text h2 span {
-    color:black; /* Highlight color for title */
-}
-
-.hero-text p {
-    margin: 1.5rem 0;
-    font-size: 1rem;
-    color: #ffffff;
-}
-
-.social-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-    color: #2563eb;
-    font-weight: bold;
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-    color: #3b82f6;
-}
-
-.social-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-
-/* Section Styles */
-section {
-    min-height: 300px; /* Match the height of your projects section */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem; /* Less padding */
-    box-sizing: border-box;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: black; /* Highlight color for section headings */
-}
-
-p, ul li {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    line-height: 1.8;
-    text-align: center;
-}
-
-ul li strong {
-    color: #2563eb; /* Blue highlight color for project titles */
-}
-
-/* Divider (HR) Styles */
-hr {
-    border: none;
-    height: 1px;
-    background: black; /* White divider */
-    margin: 3rem 0; /* Space above and below divider */
-    opacity: 0.8; /* Slight transparency */
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    background-color: #909db1;
-    color: #ffffff;
-}
-/* General Reset */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background:#909db1;
-     /* #6b7078 ; Simple, clean light grey background */
-/* #cec2c2 */
-    color: #222831;
-    line-height: 1.6;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    list-style: none; /* Removes bullet points */
+  list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: inherit; /* Inherits text color */
-    
-}
-
-/* Smooth scrolling */
+/* Smooth Scrolling */
 html {
-    scroll-padding-top: 80px; /* Matches your header height */
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
-/* Header Styles */
+/* Header */
 header {
-    display: flex;
-    justify-content: center; /* Centers the navigation bar horizontally */
-    align-items: center; /* Aligns items vertically */
-    padding: 1rem 2rem;
-    /* background-color: #111; Slightly lighter black for header */
-    position: fixed; /* Sticks header to top */
-    width: 100%;
-    z-index: 1000;
-    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); Subtle shadow */
-    
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1); /* Transparent */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center; /* Center navbar */
 }
 
-
+/* Navbar Items */
 nav ul {
-    display: flex; /* Aligns links horizontally */
-    gap: 2rem; /* Adds spacing between the links */
-}
-
-nav ul li {
-    list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
 nav ul li a {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #000; /* Black by default */
-    transition: color 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black; /* Black font */
+  transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #2563eb; /* Blue on hover */
+  color: #2563eb; /* Blue on hover */
 }
+
 
 /* Hero Section */
 #home {
-    display: flex;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    text-align: center; /* Ensures text is centered */
-    height: 50vh; /* Adjust this value to make it smaller */
-    padding: 2rem 1rem; /* Reduce padding */
-    /* background-image: url(images/chill\ guy.webp); */
-    background-size: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1rem 4rem;
+  text-align: center;
 }
 
-.hero-text h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #0d0628; /* Highlight color for text */
-    
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #222831;
+}
+
+.hero-text h1 span {
+  color: #2563eb;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #222831;
 }
 
 .hero-text p {
-    font-size: 1rem;
-    color: #ffffff;
+  color: #222831;
+  margin-bottom: 1rem;
 }
 
-/* About Section */
-#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    padding: 1rem; /* Adjust padding as needed */
-    text-align: center;
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #2563eb; /* Blue highlight color for section heading */
+.social-links a {
+  color: #2563eb;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-#about p {
-    font-size: 1rem;
-    color: #ffffff;
+.social-links a:hover {
+  text-decoration: underline;
+  color: #3b82f6;
 }
 
-/* Contact Section */
-#contact {
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers items horizontally */
-    text-align: center; /* Centers text alignment */
-    height: 30vh; /* Set to a smaller value */
-    padding: 1rem; /* Reduce padding */
+.social-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #2563eb; /* Blue highlight color for heading */
+/* Section Layouts */
+section {
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
-#contact p {
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    color: #ffffff;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2563eb;
 }
 
-#contact .social-links {
-    display: flex; /* Aligns links horizontally */
-    gap: 1.5rem; /* Adds spacing between links */
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-#contact .social-links a {
-    color: #2563eb; /* Blue highlight color for social links */
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none; /* Removes underline */
-    transition: color 0.3s ease;
-}
-
-#contact .social-links a:hover {
-    color: #3b82f6; /* Blue color on hover */
-}
-
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    background-color: #2563eb; /* Blue same as sections */
-    color: #ffffff;
-    
-}
-
-/* Projects Table Styles */
-#projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    padding: 1rem; /* Adjust padding as needed */
-}
-
-#projects table {
-    width: 100%; /* Full width of the section */
-    border-collapse: collapse; /* Removes space between table borders */
-    margin: 2rem 0; /* Spacing around the table */
-}
-
-#projects th, #projects td {
-    border: 1px solid #ffffff; /* White border for table */
-    padding: 1rem; /* Adds padding inside cells */
-    text-align: left; /* Aligns text to the left */
-    color: #ffffff; /* White text */
-}
-
-#projects th {
-    background-color: black; /* Red background for header row */
-    color: #000000; /* Black text for headers */
-    font-size: 1.2rem;
-}
-
-#projects tr:nth-child(even) {
-    background-color: #111; /* Slightly darker background for even rows */
-}
-
-#projects tr:hover {
-    background-color: #333; /* Highlight row on hover */
-}
-
-#projects a {
-    color: #2563eb; /* Blue highlight color for links */
-    text-decoration: underline; /* Underline for links */
-    transition: color 0.3s ease;
-}
-
-#projects a:hover {
-    color: #3b82f6; /* Blue color on hover */
-}
-
-/* Projects Grid Styles */
+/* Projects */
 .projects-grid {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .project-card {
-    background: #909db1 ;
-    border-radius: 24px;
-    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: box-shadow 0.2s;
+  background: #909db1;
+  border-radius: 24px;
+  box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+  padding: 2rem 1.5rem;
+  width: 320px;
+  text-align: center;
+  transition: box-shadow 0.2s;
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.16);
 }
 
 .project-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 16px;
-    margin-bottom: 1.2rem;
-}
-
-.project-desc {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0.7rem;
-    text-align: center;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1.2rem;
 }
 
 .project-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-    color: #222831;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222831;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 .github-btn {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    border: 1.5px solid #222831;
-    border-radius: 999px;
-    background: none;
-    color: #222831;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.2s, color 0.2s;
-    margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid #222831;
+  border-radius: 999px;
+  color: #222831;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
 }
 
 .github-btn:hover {
-    background: #222831;
-    color: #fff;
+  background: #222831;
+  color: #fff;
 }
 
-.hero-text h1,
-.hero-text h2,
-.hero-text p {
-    color: #222831; /* Dark text for better contrast */
+/* Contact Section */
+#contact .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-#about h2,
-#about p {
-    color: #222831; /* Dark text for about section */
+/* Footer */
+footer {
+  background-color: #2563eb;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-#contact h2,
-#contact p {
-    color: #222831; /* Dark text for contact section */
+/* Divider */
+hr {
+  border: none;
+  height: 1px;
+  background: black;
+  margin: 3rem 0;
+  opacity: 0.6;
 }
 
-#home, main, .hero-content, #projects, #about, #contact {
-    margin-top: 60px; /* Adjust to navbar height */
-}
-
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 900px) {
-    .projects-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    .project-card {
-        width: 90vw;
-        max-width: 400px;
-    }
-    header {
-        padding: 0.5rem 1rem;
-    }
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  nav ul {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 0.5rem 0.5rem;
-    }
-    nav ul {
-        gap: 1rem;
-    }
-    .hero-content,
-    section {
-        padding: 1.5rem 0.5rem;
-    }
-    h1, .hero-text h1 {
-        font-size: 2rem;
-    }
-    h2, .hero-text h2 {
-        font-size: 1.3rem;
-    }
-    .project-card {
-        width: 98vw;
-        max-width: 98vw;
-        padding: 1rem 0.5rem;
-    }
-    #about, #contact {
-        padding: 2rem 0.5rem;
-    }
-    .social-links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-}
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
 
-/* Ensure horizontal scroll never appears */
-body {
-    overflow-x: hidden;
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

@@ -16,3 +16,7 @@ build/
 # Node-related (just in case you add tooling later)
 node_modules/
 
+# Ignore
+server.js
+.env
+node_modules/

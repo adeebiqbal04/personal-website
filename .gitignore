@@ -17,6 +17,5 @@ build/
 node_modules/
 
 # Ignore
-server.js
 .env
 node_modules/

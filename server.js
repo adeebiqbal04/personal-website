@@ -47,6 +47,6 @@ console.log("PASS:", process.env.EMAIL_PASS.length); // should log 16
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });

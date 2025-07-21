@@ -34,7 +34,7 @@ console.log("PASS:", process.env.EMAIL_PASS.length); // should log 16
     from: `"${name}" <${process.env.EMAIL_USER}>`,
     to:process.env.EMAIL_USER,
     subject: `New contact form submission from ${name}`,
-    text: `Email: ${email}\n\nMessage:\n${message}`
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
   };
 
   try {

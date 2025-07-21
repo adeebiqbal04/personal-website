@@ -2,7 +2,7 @@ const form = document.querySelector(".contact-form");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault(); // Prevent default form action (page reload)
-  fetch('http://127.0.0.1:5001/contact', {
+  fetch('https://api.adeeb.au/contact', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

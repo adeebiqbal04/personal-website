@@ -2,37 +2,36 @@ require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 5001;
 
+// Middleware
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json()); // ✅ Replaces body-parser
 
-// Serve static files from the "public" directory
+// Serve static files
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Contact route
 app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
-console.log("GMAIL:", process.env.EMAIL_USER);
-console.log("PASS:", process.env.EMAIL_PASS.length); // should log 16
+  console.log("GMAIL:", process.env.EMAIL_USER);
+  console.log("PASS LENGTH:", process.env.EMAIL_PASS?.length); // ✅ Safer logging
 
-
-  // Configure Nodemailer with Gmail
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user:process.env.EMAIL_USER,    // your Gmail
-      pass:process.env.EMAIL_PASS     // your Gmail App Password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS
     }
   });
 
   const mailOptions = {
     from: `"${name}" <${process.env.EMAIL_USER}>`,
-    to:process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: `New contact form submission from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
   };
@@ -47,6 +46,7 @@ console.log("PASS:", process.env.EMAIL_PASS.length); // should log 16
   }
 });
 
+// Start server
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });

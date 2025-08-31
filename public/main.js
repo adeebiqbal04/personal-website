@@ -2,59 +2,28 @@ const form = document.querySelector("#contactForm");
 let isSubmitting = false;
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  
-
   if (isSubmitting) return;
   
   const submitButton = form.querySelector('button[type="submit"]');
   const originalText = submitButton.textContent;
   
-
+  // Show loading state
   isSubmitting = true;
   submitButton.disabled = true;
   submitButton.textContent = "Sending...";
   
-  const formData = new FormData(form);
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const message = formData.get("message");
+  // Let the form submit naturally to Web3Forms
+  // The page will redirect to a success page, then back
   
-  if (!name || !email || !message) {
-    alert("Please fill in all fields");
-    resetButton();
-    return;
-  }
-  
-  try {
-    const response = await fetch("/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message }),
-    });
-    
-    if (response.ok) {
-      showQuickMessage("✅ Message sent!", "success");
-      form.reset(); 
-    } else {
-      throw new Error("Failed to send message");
-    }
-  } catch (error) {
-    console.error("Error:", error);
-    showQuickMessage("❌ Failed to send message", "error");
-  } finally {
-    resetButton();
-  }
-  
-  function resetButton() {
+  // Reset button after a delay (in case user comes back)
+  setTimeout(() => {
     isSubmitting = false;
     submitButton.disabled = false;
     submitButton.textContent = originalText;
-  }
+  }, 3000);
 });
 
+// Function to show quick, non-blocking messages
 function showQuickMessage(message, type) {
   const existingMessage = document.querySelector('.quick-message');
   if (existingMessage) {
@@ -96,7 +65,7 @@ function showQuickMessage(message, type) {
   }, 3000);
 }
 
-
+// Add CSS animations
 const style = document.createElement('style');
 style.textContent = `
   @keyframes slideIn {

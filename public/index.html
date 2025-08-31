@@ -95,18 +95,19 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Let's Connect</h2>
-        <form class="contact-form" id="contactForm">
-       <label for="name">Name</label>
-       <input type="text" id="name" name="name" placeholder="Your name" required>
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d5ea6575-a37d-4074-8b54-fb85d27475d1">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
 
-     <label for="email">Email</label>
-     <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
 
-     <label for="message">Message</label>
-     <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
 
-      <button type="submit">Send Message</button>
-      </form>
+          <button type="submit">Send Message</button>
+        </form>
 
         <p>Feel free to reach out via the links below:</p>
         <!-- <ul>

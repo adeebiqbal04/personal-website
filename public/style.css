@@ -175,6 +175,14 @@ p {
   margin-bottom: 1rem;
 }
 
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
 .github-btn {
   display: inline-block;
   padding: 0.5rem 1.5rem;
@@ -187,6 +195,21 @@ p {
 
 .github-btn:hover {
   background: #222831;
+  color: #fff;
+}
+
+.live-btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1.5px solid #2563eb;
+  border-radius: 999px;
+  color: #2563eb;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.live-btn:hover {
+  background: #2563eb;
   color: #fff;
 }
 
